@@ -20,13 +20,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" data-theme="light">
+    <html lang="en" data-theme="dark">
       <body>
         <SidebarProvider>
           <AppSidebar />
-          <main>
+          <main className="flex-1">
             <SidebarTrigger />
-            {children}
+            <div className="px-5 w-full">{children}</div>
           </main>
         </SidebarProvider>
       </body>
