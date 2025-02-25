@@ -7,6 +7,9 @@ import {
   TrendingDown,
 } from "lucide-react";
 
+import SavingGoals from "@/components/homepage/SavingGoals";
+import RecentTransaction from "@/components/homepage/RecentTransaction";
+
 const page = () => {
   return (
     <div className="w-full min-h-screen p-4">
@@ -53,7 +56,12 @@ const page = () => {
         </div>
       </div>
 
-      <div className="mt-6">More Goods Coming as Soon as posibble!</div>
+      <div className="mt-6 flex flex-wrap gap-4">
+        <SavingGoals />
+        <RecentTransaction />
+      </div>
+
+      <div className="mt-6">Monthly Overview</div>
     </div>
   );
 };
