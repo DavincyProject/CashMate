@@ -9,6 +9,7 @@ import {
 
 import SavingGoals from "@/components/homepage/SavingGoals";
 import RecentTransaction from "@/components/homepage/RecentTransaction";
+import MonthlyOverview from "@/components/homepage/MonthlyOverview";
 
 const page = () => {
   return (
@@ -61,7 +62,9 @@ const page = () => {
         <RecentTransaction />
       </div>
 
-      <div className="mt-6">Monthly Overview</div>
+      <div className="mt-6">
+        <MonthlyOverview />
+      </div>
     </div>
   );
 };
